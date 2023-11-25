@@ -22,7 +22,7 @@ Live Text Finder is an Android application that uses MLKit, CameraX, and Android
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/salman-git/live-text-finder.git
+   git clone https://github.com/salman-git/live_text_finder.git
 
 2. Open the project in Android Studio.
 
