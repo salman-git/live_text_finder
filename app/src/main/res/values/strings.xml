@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Live Text Finder</string>
+    <string name="alert_title">Search</string>
+    <string name="alert_message">Enter text below to search in live image</string>
+    <string name="splash_activity_image_text">Finding text</string>
+    <string name="splash_activity_text">Live Text Finder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

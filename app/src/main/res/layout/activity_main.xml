@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="0dp">
+    </androidx.camera.view.PreviewView>
+    <com.meancoder.livetextfinder.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/viewFinder"
+        app:layout_constraintRight_toRightOf="@id/viewFinder"
+        app:layout_constraintTop_toTopOf="@id/viewFinder"
+        app:layout_constraintBottom_toBottomOf="@id/viewFinder"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_search_24"
+        app:tint="#ffffff" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:tint="#ffffff"
+            android:padding="20dp"
+            android:background="@drawable/round_button_stroke"
+            android:src="@drawable/ic_baseline_question_mark_24"/>
+
+        <ImageButton
+            android:id="@+id/flashButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/round_button_stroke"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_flash_off_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/helpButton"
+            app:tint="#ffffff"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/strokeWidthButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:tint="#ffffff"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="0.1"
+            android:background="@drawable/round_button_stroke"
+            android:src="@drawable/ic_baseline_wide_24"></ImageButton>
+        <ImageButton
+            android:id="@+id/paintButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:tint="#ffffff"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="0.1"
+            android:background="@drawable/round_button_stroke"
+            android:src="@drawable/ic_baseline_format_paint_24"></ImageButton>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
